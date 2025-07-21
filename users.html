@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./materialize/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/util.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>User</title>
 </head>
+
 <body>
-    
+    <!--navbar section----------------start------------------------>
+    <nav class="white z-depth-0 top-navbar">
+        <div class="nav-wrapper">
+            <a href="./index.html" class="green-text hide-on-med-and-up">Home</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i
+                    class="material-icons green-text">menu</i></a>
+            <ul class="hide-on-med-and-down">
+                <li><a href="./" class="green-text">HOME</a></li>
+                <li><a href="./users.html" class="green-text">Managment</a></li>
+                <li><a href="https://codyade.com" class="green-text">Codyade</a></li>
+                <li><a href="https:/aparat.com" class="green-text">Aparat</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="images/woods.jpeg" class="width_100">
+                </div>
+                <a><img class="circle" src="images/IMG_1315.jpg"></a>
+                <a><span class="white-text name">amir hossein hanifi</span></a>
+                <a><span class="white-text email">amirhanifi.1381@gmail.com</span></a>
+            </div>
+        </li>
+        <li><a href="https://codyade.com" target="_blank"><i class="material-icons">link</i>codyade</a></li>
+        <li><a href="https://google.com" target="_blank"><i class="material-icons">link</i>google</a></li>
+
+        <li><a href="#!">Second Link</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="subheader">Subheader</a></li>
+        <li><a class="waves-effect" href="./index.html">HOME</a></li>
+        <li><a class="waves-effect" href="./users.html">User</a></li>
+    </ul>
+    <!--navbar section----------------end--------------------------->
+    <!--content section----------------start------------------------>
+    <section id="top-action-section" class="row">
+        <!--------add buttom-------->
+        <div class="padding-left-10px padding-right-10px col s12 m4 l3">
+            <button
+                class="waves-effect waves-light btn green padding-left-20px padding-right-20px border-redius-rounded-pill width_100">
+                <i class="material-icons gutter_left_quarter">add</i>
+
+                Add user
+            </button>
+        </div>
+        <!--------search section-------->
+        <div class="row col s12 m8 l8">
+            <div class="input-field col s12">
+                <input id="search" type="text" class="validate">
+                <label for="search">
+                    <i class="material-icons search-icon">search</i>
+                    search
+                </label>
+            </div>
+        </div>
+
+        <div class="row col l1 hide-on-med-and-down"></div>
+
+    </section>
+    <!--content section----------------end-------------------------->
+
+    <script src="./materialize/js/materialize.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>

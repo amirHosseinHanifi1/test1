@@ -1,15 +1,35 @@
-.display-flex{
+.display-flex {
     display: flex;
 }
-.justify-content-center{
+
+.justify-content-center {
     justify-content: center;
 }
-.flex-direction-column{
+
+.flex-direction-column {
     flex-direction: column;
 }
-.align-items-center{
+
+.align-items-center {
     align-items: center;
 }
-.filter-drop-shadow{
+
+.filter-drop-shadow {
     filter: drop-shadow(2px, 4px, 6px, black);
+}
+
+.search-icon {
+    position: relative;
+    top: 7px;
+}
+
+@media(min-width: 600px) {
+    .top-navbar {
+        box-shadow: 0 0 50px gray !important;
+    }
+
+    #top-action-section {
+        display: flex;
+        align-items: center;
+    }
 }
