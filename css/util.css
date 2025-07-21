@@ -133,6 +133,7 @@
 .padding-left-20px{
 	padding-left: 20px;
 }
+
 .padding-right-10px{
 	padding-right:10px;
 }
@@ -148,12 +149,17 @@
 .padding-bottom-20px{
 	padding-bottom: 20px;
 }
+
 .padding-top-10px{
 	padding-top: 10px;
 }
 
 .padding-bottom-10px{
 	padding-bottom: 10px;
+}
+
+.padding-all-5px{
+	padding: 5px;
 }
 /* `Widths
 ----------------------------------------------------------------------------------------------------*/
@@ -257,4 +263,12 @@
 
 .border-redius-rounded-pill{
 	border-radius: 5rem;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.transation-200ms{
+    transition: all 200ms ease;
 }
