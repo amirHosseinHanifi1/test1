@@ -5,6 +5,15 @@
 .justify-content-center {
     justify-content: center;
 }
+.justify-content-left{
+    justify-content: left;
+}
+.justify-content-right{
+    justify-content: right;
+}
+.justify-content-space-between{
+    justify-content: space-between;
+}
 
 .flex-direction-column {
     flex-direction: column;
@@ -38,10 +47,14 @@
     transform: rotate(180deg);
 }
 
-.user-list-item.active .collapsible-header{
+.user-list-item.active .collapsible-header {
     background-color: #388e3c80;
 }
 
 .user-list-item.active {
     background-color: #4caf4fbd;
+}
+
+table.highlight>tbody>tr:hover {
+    background-color: #4caf4f46;
 }
