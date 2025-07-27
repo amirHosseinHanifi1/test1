@@ -1,6 +1,13 @@
 .display-flex {
     display: flex;
 }
+.display-none{
+    display: none;
+}
+
+.pos-fixed{
+    position: fixed;
+}
 
 .justify-content-center {
     justify-content: center;
@@ -57,4 +64,41 @@
 
 table.highlight>tbody>tr:hover {
     background-color: #4caf4f46;
+}
+
+.container{
+    width: 100% !important;
+}
+
+.add-user-modal-back{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0px;
+    top: 0px;
+    z-index: 999;
+}
+
+.add-user-modal{
+    position: fixed;
+    height: 70vh;
+    background-color: white;
+    bottom: 0px;
+    z-index: 1000;
+    left: 0px;
+    right: 0px;
+    bottom: -70vh;
+    transition: all ease 0.5s;
+}
+.add-user-modal.show{
+    bottom: 0;
+    box-shadow: 0 0 10px black;
+}
+
+.add-user-modal > .row{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
 }

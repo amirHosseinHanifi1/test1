@@ -284,6 +284,19 @@
 	border-radius: 5rem;
 }
 
+.br-left-top-30px{
+	border-top-left-radius: 30px;
+}
+.br-right-top-30px{
+	border-top-right-radius: 30px;
+}
+.br-left-bottom-30px{
+	border-bottom-left-radius: 30px;
+}
+.br-right-bottom-30px{
+	border-bottom-right-radius: 30px;
+}
+
 .no-border{
 	border: unset !important;
 }
@@ -294,4 +307,17 @@
 
 .transation-200ms{
     transition: all 200ms ease;
+}
+
+.left-zero{
+	left: 0px;
+}
+.right-zero{
+	right: 0px;
+}
+.top-zero{
+	top: 0px;
+}
+.bottom-zero{
+	bottom: 0px;
 }

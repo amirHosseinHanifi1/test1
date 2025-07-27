@@ -54,7 +54,7 @@
     <section id="top-action-section" class="row container">
         <!--------add buttom-------->
         <div class="padding-left-10px padding-right-10px col s12 m4 l3">
-            <button
+            <button id="add-user-button"
                 class="waves-effect waves-light btn green padding-left-20px padding-right-20px border-redius-rounded-pill width_100">
                 <i class="material-icons gutter_left_quarter">add</i>
 
@@ -188,7 +188,7 @@
             </table>
         </div>
         
-        <div class="pagination-container container padding-left-10px padding-right-10px padding-top-20px padding-bottom-10px display-flex justify-content-space-between align-items-center">
+        <div class="pagination-container container padding-left-10px padding-right-10px padding-top-20px padding-bottom-10px display-flex justify-content-space-between align-items-center pos-fixed bottom-zero left-zero right-zero z-depth-4 br-left-top-30px br-right-top-30px">
             <div class="pagination-item-counts padding-left-10px display-flex justify-content-left display-flex align-items-center">
 
                 showing
@@ -197,7 +197,7 @@
                     <input type="number" class="green-text no-border center-align gutter_bottom_none" value="10">
                 </span>
                 of
-                <span class="green-text gutter_left_quarter gutter_right_quarter ">100</span>
+                <span class="green-text gutter_left_quarter gutter_right_quarter">100</span>
             </div>
 
             <div class="pgination-buttons">
@@ -206,7 +206,36 @@
             </div>
         </div>
     </section>
-    <!--content section----------------end-------------------------->
+
+    <!--add user----------------start------------------------>
+    <div class="add-user-modal-back display-none"></div>
+    <div class="add-user-modal container br-left-top-30px br-right-top-30px">
+        <div class="row center-on-small-only">
+            <h5>
+                <i class="material-icons gutter_right_half gutter_left_half">person-add</i>
+                Add User
+            </h5>
+
+            <form action="">
+                <div class="input-field col s12">
+                    <input type="text" id="name" class="validate">
+                    <label for="name">name: </label>
+                </div>
+                <div class="input-field col s12">
+                    <input type="text" id="Username" class="validate">
+                    <label for="Username">Username: </label>
+                </div>
+                <div class="input-field col s12">
+                    <input type="text" id="Email" class="validate">
+                    <label for="Email">Email: </label>
+                </div>
+
+                <button type="button" class="waves-effect waves-light btn green white-text gutter_top gutter_bottom_half border-redius-rounded-pill width_100 max-width-200px">Submit</button>
+            </form>
+
+        </div>
+    </div>
+    <!--add user----------------end-------------------------->
 
     <script src="./materialize/js/materialize.min.js"></script>
     <script src="./js/main.js"></script>
